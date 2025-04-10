@@ -37,3 +37,26 @@ console.log("9" > "1000"); // true
 console.log("1000000" > "9"); // false
 
 console.log("elma" > "armut"); // true => ASCII değerlerine bakar.
+
+let number = 10;
+
+number -= 5;
+console.log(number);
+number += 10;
+console.log(number);
+number *= 2;
+console.log(number);
+number /= 6;
+console.log(number);
+number **= 2;
+console.log(number);
+number %= 3;
+console.log(number);
+
+number &= 0; // number = (number && 0)
+console.log(number);
+
+number |= 10;
+console.log(number); // number = (number || 10)
+
+// Yukarıdaki atama operatörleri hem aritmetik işlem yapacak hem de işlem sonucunu değişkene atayacaktır. Bu yüzden eğer değişkenin değişmemesi gerekiyorsa aritmetik operatörler atamasız bir şekilde kullanılmalıdır.

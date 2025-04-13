@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Donusumleri</title>
+</head>
+<body>
+
+    <h1>Tip Donusumleri</h1>
+    <script>
+
+        let age = "33";
+        console.log(typeof age); // string
+
+        age =age + 15; // string + number = string
+        console.log( age ,typeof age); // string
+
+        age =Number(age) +50;
+        console.log( age,typeof age); // number
+
+        const yas = prompt("Yasinizi giriniz: ");
+        console.log(yas, typeof yas); // string
+
+        const result =Number("123asd");
+        consolelog(result,isNaN(result)); // NaN
+        // NaN: Not a Number
+        // isNaN: Not a Number kontrolu yapar.
+        //NaN bir hata degil, sadece bir degerdir.
+
+        console.log(5/0); // 0.1
+        
+        //bu islem sonucunda Infinity degeri gelir.
+        //Infinity: sonsuzluk demektir. 0 ile bolunemez.
+
+        console.log(result,Boolean(result)); // NaN false
+        //Boolean: true veya false degerini dondurur.
+    </script>
+</body>
+</html>

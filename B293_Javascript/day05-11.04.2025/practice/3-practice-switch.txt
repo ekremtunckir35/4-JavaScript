@@ -1,0 +1,9 @@
+Bir
+Textbox tan alınan fiyat bilgisi
+1500 den büyükse %15,
+1000 den büyükse %13,
+700 den büyükse %10,
+500 den büyükse %7,
+300 den büyükse %5,
+Diğer durumlarda %2 indirim uygulayıp sonucu yazan
+programı yapınız.

@@ -1,4 +1,0 @@
-Bir
-Textbox tan alınan fiyat bilgisi 500 den büyükse %10
-indirim uygulayıp sonucu yazan, değilse %5 indirip
-uygulayıp sonucu yazan programı yapınız.

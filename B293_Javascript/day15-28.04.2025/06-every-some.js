@@ -58,3 +58,23 @@ function isAnyItemPositive(arr){
 console.log(isAnyItemPositive(numbers1));
 console.log(isAnyItemPositive(numbers2));
 console.log(isAnyItemPositive(numbers3));
+
+
+// Bir array içerisindeki tüm değerler 33'ü geçtiğinde true olan fonksiyonu yazınız
+
+let arr = [100,200,300];
+
+const checkIfGreater = (array) => {
+
+    for(let i = 0; i < array.length; i++){
+
+        if(!array[i] > 33){
+            return false;
+        }
+    }
+
+    return true
+
+}
+
+arr.every((item) =>  item>33);

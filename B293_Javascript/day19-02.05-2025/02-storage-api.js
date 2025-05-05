@@ -1,32 +1,29 @@
-// DOM Elements
-const getEl = document.getElementById("get");
-const setEl = document.getElementById("set");
-const removeEl = document.getElementById("remove");
-const clearEl = document.getElementById("clear");
+// DOM Element
+const offcanvas = document.getElementById("offcanvas");
+const btnAccept = document.getElementById("accept");
+const btnClose = document.getElementById("close");
 
-// Global Variables
-const AUTH_SECRET = "MB39kYHqa2xsYhxktPXX2Rmc0oQnKfJAqHtvBUgSkjc=";
+let isPrivacyPolicyAccepted = localStorage.getItem("privacyPolicy");
+console.log(isPrivacyPolicyAccepted);
+
+if(isPrivacyPolicyAccepted){
+    offcanvas.remove();
+} 
 
 // Event
-getEl.addEventListener("click", () => {
-    const classified = localStorage.getItem("classified");
-    console.log(classified); // yoksa null döner
+btnAccept.addEventListener("click", () => {
+    console.log("object");
+    localStorage.setItem("privacyPolicy", true);
+    offcanvas.remove()
 })
 
-setEl.addEventListener("click", () => {
-    localStorage.setItem("classified", AUTH_SECRET);
-    localStorage.setItem("not-classified", "Pizza severim.");
-    localStorage.setItem("another-classified", AUTH_SECRET);
+btnClose.addEventListener("click", () => {
+
+    offcanvas.classList.remove("show");
+
+    setTimeout(() => {
+        offcanvas.classList.add("show");
+        console.log("object");
+    }, 3000)
+
 })
-
-removeEl.addEventListener("click", () => {
-    localStorage.removeItem("another-classified");
-})
-
-clearEl.addEventListener("click", () => {
-  localStorage.clear();
-});
-
-// localStorage yerine sessionStorage kullanmak istiyorsanız aynı metodlar geçerlidir sadece sessionStorage. ile yazmanız gerekir.
-
-// sessionStorage.setItem("anohter", "123")
